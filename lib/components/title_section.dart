@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class TitleSection extends StatelessWidget {
   const TitleSection({
@@ -17,13 +18,11 @@ class TitleSection extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Text(
-            title,
-            style: const TextStyle(
-              fontWeight: FontWeight.bold,
-              fontSize: 20,
-            ),
-          ),
+          Text(title,
+              style: GoogleFonts.deliciousHandrawn(
+                fontSize: 24,
+                fontWeight: FontWeight.bold,
+              )),
           Text(
             location,
             style: const TextStyle(
